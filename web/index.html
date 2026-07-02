@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="header-container">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h1>SmartHome</h1>
+        </div>
+
+        <div class="time-box">
+            <span id="time">00:00:00</span>
+        </div>
+
+        <div class="sensor-grid">
+            <div class="card">
+                <div class="card-title">
+                    <img src="nhietdo.jpg" class="icon" alt="Nhiệt độ">
+                    <h2>Nhiệt độ</h2>
+                </div>
+                <p id="nhietdo">-- °C</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <img src="doam1.png" class="icon" alt="Độ ẩm">
+                    <h2>Độ ẩm</h2>
+                </div>
+                <p id="doam">-- %</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <img src="gasoff.png" id="icon-khigas" class="icon" alt="Khí gas">
+                    <h2>Khí gas</h2>
+                </div>
+                <p id="khigas">--</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <img src="khongchuyendong.png" id="icon-chuyendong" class="icon" alt="Chuyển động">
+                    <h2>Chuyển động</h2>
+                </div>
+                <p id="chuyendong">--</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <img src="canhbaooff.png" id="icon-canhbao" class="icon" alt="Cảnh báo">
+                    <h2>Cảnh báo</h2>
+                </div>
+                <p id="canhbao">--</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <img src="den1.png" id="icon-den" class="icon" alt="Đèn">
+                    <h2>Đèn</h2>
+                </div>
+                <p id="led-status">--</p>
+            </div>
+        </div>
+
+        <div class="control-box">
+            <h2>Điều khiển Đèn</h2>
+            <div class="button-group">
+                <button id="btn-led-on">ON</button>
+                <button id="btn-led-off">OFF</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">
+                Lê Văn Đức - 23161121 <br>
+                Võ Như Thế - 23161194 <br>
+                Lê Trung Huy - 23161125
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDPCCZt7F1Ma3s7kIMfAqB8MKuuObC0IgI",
+            authDomain: "tt-iot-610c3.firebaseapp.com",
+            databaseURL: "https://tt-iot-610c3-default-rtdb.firebaseio.com",
+            projectId: "tt-iot-610c3",
+            storageBucket: "tt-iot-610c3.firebasestorage.app",
+            messagingSenderId: "842346629913",
+            appId: "1:842346629913:web:36a295bee51b3bc4b25388",
+            measurementId: "G-8FLGQEPC2Y"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="function.js"></script>
+</body>
+</html>
