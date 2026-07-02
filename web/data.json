@@ -1,0 +1,20 @@
+{
+  "quan1": {
+    "NhietDo": 0,
+    "DoAm": 0,
+    "LuongMua": 0,
+    "KhiGas": 0,
+    "ChuyenDong": 0,
+    "CanhBao": 0,
+    "CanhBaoChuyenDong": 0
+  },
+  "control": {
+    "den": 0
+  },
+  "thietbi": {
+    "ledCanhBao": 0
+  },
+  "thietbi3": {
+    "den": 0
+  }
+}
